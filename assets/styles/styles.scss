@@ -283,12 +283,12 @@ body {
 
                         .music-mini-card-details-header {
                             color: #ffffff;
-                            font-size: 17px;
+                            font-size: 16px;
                             text-transform: uppercase;
                         }
                         .music-mini-card-details-subheader {
                             color: rgb(141, 129, 129);
-                            font-size: 16px;
+                            font-size: 13px;
                         }
                     }
                 }
@@ -364,7 +364,14 @@ body {
                         }
                         .location-mini-card-details-subheader {
                             color: rgb(141, 129, 129);
-                            font-size: 16px;
+                            font-size: 13px;
+
+                            span {
+                                margin-right: 3px;
+                                img {
+                                    vertical-align: middle;
+                                }
+                            }
                         }
                     }
                 }
@@ -458,7 +465,7 @@ body {
                         }
                         .friend-request-mini-card-details-subheader {
                             color: rgb(141, 129, 129);
-                            font-size: 12px;
+                            font-size: 13px;
                         }
                     }
                 }
@@ -558,7 +565,7 @@ body {
                         }
                         .coffee-list-mini-card-details-subheader {
                             color: rgb(141, 129, 129);
-                            font-size: 12px;
+                            font-size: 13px;
                         }
                     }
                 }

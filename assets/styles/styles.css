@@ -302,13 +302,13 @@ body .container .music-mini-card-container .music-mini-card-display .music-mini-
 
 body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-details-text-container .music-mini-card-details-header {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-details-text-container .music-mini-card-details-subheader {
   color: #8d8181;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 body .container .music-mini-card-container .music-mini-card-display .music-mini-card-btn-container {
@@ -407,7 +407,15 @@ body .container .location-mini-card-container .location-mini-card-display .locat
 
 body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container .location-mini-card-details-subheader {
   color: #8d8181;
-  font-size: 16px;
+  font-size: 13px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container .location-mini-card-details-subheader span {
+  margin-right: 3px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container .location-mini-card-details-subheader span img {
+  vertical-align: middle;
 }
 
 body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container {
@@ -517,7 +525,7 @@ body .container .friend-request-mini-card-container .friend-request-mini-card-di
 
 body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-details-text-container .friend-request-mini-card-details-subheader {
   color: #8d8181;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container {
@@ -632,7 +640,7 @@ body .container .coffee-list-mini-card-container .coffee-list-mini-card-display 
 
 body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-details-text-container .coffee-list-mini-card-details-subheader {
   color: #8d8181;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-card-price-container {

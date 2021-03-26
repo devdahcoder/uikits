@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap");
+.card-padding {
+  padding: 3px 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  height: 100%;
+  background: #171717;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-slider-thumb {
+  background: #123bcf;
+}
+
+body .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body .container .btn-container .big-btn-container .bg-btn {
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  padding: 1em 5em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body .container .btn-container .small-btn-container .small-btn {
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body .container .arrow-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container .arrow-container .right-arrow-btn-container {
+  margin-right: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .arrow-container .right-arrow-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+
+body .container .arrow-container .right-arrow-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .arrow-container .left-arrow-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .arrow-container .left-arrow-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+
+body .container .arrow-container .left-arrow-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .mobile-navigation-container {
+  width: 400px;
+}
+
+body .container .mobile-navigation-container .mobile-nav {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  padding: 1.5em;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li:hover {
+  transition: 1s;
+  background: linear-gradient(180deg, #8560ca, #7066f1);
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li a .mobile-nav-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li a .mobile-nav-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+body .container .mobile-navigation-container .mobile-nav .mobile-ul li a .mobile-nav-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .checkbox-container .check-box {
+  appearance: none;
+  height: 2em;
+  width: 4em;
+  background: #0d0d0d;
+  border-radius: 50px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+body .container .checkbox-container .check-box::before {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  background: linear-gradient(180deg, #8643FF, #4136F1);
+  border-radius: 50%;
+  top: 3.5px;
+  position: absolute;
+  left: 3px;
+  transition: 0.6s;
+}
+
+body .container .checkbox-container .check-box:checked {
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+}
+
+body .container .checkbox-container .check-box:checked:before {
+  background: #ffffff;
+  left: 35px;
+}
+
+body .container .music-mini-card-container {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+body .container .music-mini-card-container .music-mini-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.7em 2em 0.7em 0.7em;
+  justify-content: space-between;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-image-container {
+  margin-right: 1em;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-image-container .music-mini-card-image-display {
+  width: 5em;
+  height: 5em;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-image-container .music-mini-card-image-display .music-mini-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-details-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-details-text-container .music-mini-card-details-header {
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-details .music-mini-card-details-text-container .music-mini-card-details-subheader {
+  color: #8d8181;
+  font-size: 16px;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+}
+
+body .container .music-mini-card-container .music-mini-card-display .music-mini-card-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .location-mini-card-container {
+  width: 350px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 6em;
+  justify-content: space-between;
+  position: relative;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 9px;
+  left: -40px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-image-container {
+  margin-right: 1em;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-image-container .location-mini-card-image-display {
+  width: 5em;
+  height: 5em;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-image-container .location-mini-card-image-display .location-mini-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container .location-mini-card-details-header {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-mini-card-details .location-mini-card-details-text-container .location-mini-card-details-subheader {
+  color: #8d8181;
+  font-size: 16px;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container .location-mini-card-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container .location-mini-card-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  background: #0d0d0d;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  height: 3em;
+  width: 3em;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container .location-mini-card-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .location-mini-card-container .location-mini-card-display .location-card-btn-container .location-comment-btn {
+  margin-left: 0.5em;
+}
+
+body .container .friend-request-mini-card-container {
+  width: 350px;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0em 2em 0em 0em;
+  height: 6em;
+  justify-content: space-between;
+  position: relative;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 9px;
+  left: -40px;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-image-container {
+  margin-right: 1em;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-image-container .friend-request-mini-card-image-display {
+  width: 5em;
+  height: 5em;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-image-container .friend-request-mini-card-image-display .friend-request-mini-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-details-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-details-text-container .friend-request-mini-card-details-header {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-mini-card-details .friend-request-mini-card-details-text-container .friend-request-mini-card-details-subheader {
+  color: #8d8181;
+  font-size: 12px;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-mini-card-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 0px solid #000;
+  align-items: stretch;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-mini-card-btn-container button {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  height: 3em;
+  width: 3em;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-mini-card-btn-container button .svg-container {
+  cursor: pointer;
+  border: 0 solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-mini-card-btn-container .friend-request-cancel {
+  background: rgba(206, 0, 0, 0.1);
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-mini-card-btn-container .friend-request-approve {
+  background: rgba(0, 160, 6, 0.1);
+}
+
+body .container .friend-request-mini-card-container .friend-request-mini-card-display .friend-request-card-btn-container .friend-request-approve-btn {
+  margin-left: 0.5em;
+}
+
+body .container .coffee-list-mini-card-container {
+  width: 350px;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0em 2em 0em 0em;
+  height: 6em;
+  justify-content: space-between;
+  position: relative;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 9px;
+  left: -40px;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-image-container {
+  margin-right: 1em;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-image-container .coffee-list-mini-card-image-display {
+  width: 5em;
+  height: 5em;
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-image-container .coffee-list-mini-card-image-display .coffee-list-mini-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-details-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-details-text-container .coffee-list-mini-card-details-header {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-mini-card-details .coffee-list-mini-card-details-text-container .coffee-list-mini-card-details-subheader {
+  color: #8d8181;
+  font-size: 12px;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-card-price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+body .container .coffee-list-mini-card-container .coffee-list-mini-card-display .coffee-list-card-price-container .coffee-list-price {
+  color: #4136f1;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body .container .form-card-container {
+  width: 300px;
+  margin: 10px 0;
+}
+
+body .container .form-card-container .form-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+body .container .form-card-container .form-card-display .form-card-header {
+  color: #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 2;
+}
+
+body .container .form-card-container .form-card-display form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+body .container .form-card-container .form-card-display form .form-card-input-container {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+body .container .form-card-container .form-card-display form .form-card-input-container input {
+  width: 100%;
+  padding: 0.7em 0.5em;
+  background: rgba(255, 255, 255, 0.03);
+  outline: none;
+  border: 0px solid #000;
+  font-size: 17px;
+  color: #ffffff;
+  display: flex;
+}
+
+body .container .form-card-container .form-card-display form .form-card-number-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .container .form-card-container .form-card-display form .form-card-number-display .form-card-padding {
+  padding: 0 0.6em;
+}
+
+body .container .form-card-container .form-card-display form .form-card-btn-container {
+  width: 100%;
+  margin-top: 3em;
+}
+
+body .container .form-card-container .form-card-display form .form-card-btn-container button {
+  outline: none;
+  border: 0px solid #000;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  color: #ffffff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1em 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

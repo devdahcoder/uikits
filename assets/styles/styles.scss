@@ -77,9 +77,8 @@ $main-color: #ffffff;
     // font-family: 'Sarala', sans-serif;
     // font-family: 'Signika', sans-serif;
     // font-family: 'Work Sans', sans-serif;
-    // font-family: 'Yantramanav', sans-serif;
-    // font-family: 'Yantramanav', sans-serif;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Yantramanav', sans-serif;
+    // font-family: 'Inter', sans-serif;
     // font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -689,7 +688,7 @@ body {
                 .weather-card-degree-container {
                     font-size: 60px;
                     position: relative;
-                    margin: 0.3em 0;
+                    margin: 0.1em 0;
 
                     sup {
                         position: absolute;
@@ -697,6 +696,10 @@ body {
                         right: -17px;
                         font-size: 20px;
                     }
+                }
+
+                .weather-card-state-container {
+                    line-height: 30px;
                 }
 
                 .weather-card-text-container {
@@ -867,6 +870,7 @@ body {
 
                                 .payment-card-method-image-container {
                                     
+                                    
                                     img {
                                         vertical-align: middle;
                                     }
@@ -886,6 +890,171 @@ body {
                         padding: 0.8em 0;
                         border-radius: 10px;
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .music-player-card-container {
+            width: 320px;
+            .music-player-card-display {
+                @include component-container();
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+                text-align: center;
+
+
+                .music-player-card-image-container {
+                    width: 100%;
+                    display: block;
+                    margin: 0.8em 0;
+        
+                    .music-player-card-image-display {
+                        overflow: hidden;
+                        display: block;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        padding-bottom: 100%;
+            
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            height: 100%;
+                            left: 0;
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            // z-index: 0;
+                        }
+                    }
+                }
+
+                .music-player-card-text-container {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0.5em 0;
+
+                    .music-player-card-artist {
+                        font-size: 23px;
+                        line-height: 25px;
+                        // padding: 0.5em 0;
+                    }
+
+                    .music-player-card-song {
+                        font-size: 15px;
+                        line-height: 25px;
+                        // padding: 0.3em 0;
+                    }
+                }
+
+                .music-player-card-duration-container {
+                    width: 100%;
+                    display: flex;
+                    // align-items: center;
+                    flex-direction: column;
+                    // justify-content: space-between;
+
+                    .music-player-card-duration-range {
+                        margin-bottom: 3px;
+                        width: 100%;
+                        position: relative;
+                        // border: 1px solid red;
+
+                        input[type="range"] {
+                            vertical-align: middle;
+                            appearance: none;
+                            outline: none;
+                            height: 5px;
+                            width: 100%;
+                            border-radius: 10px;
+                            
+
+                            &::-webkit-slider-thumb {
+                                appearance: none;
+                                height: 14px;
+                                width: 14px;
+                                border-radius: 100vh;
+                                background: linear-gradient(270deg, #8743FF, #4136F1);
+                                box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
+                                cursor: pointer;
+                                border-radius: 50%;
+                            }
+
+                        }
+
+                        .music-card-progress-bar {
+                            width: 0%;
+                            height: 5px;
+                            background: linear-gradient(270deg, #8743FF, #4136F1);
+                            // box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
+                            border-radius: 10px;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            // transform: translate(50%,50%);
+                        }
+                    }
+
+                    .music-player-card-duration-number-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: row;
+                    }
+                }
+
+                .music-card-player-control-container {
+                    padding: 0em 2em;
+
+                    .music-card-player-control-display {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .music-card-player-control-btn-container {
+                            @include button-container();
+
+                            button {
+                                @include svg-btn();
+                                cursor: pointer;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                transition: 1s;
+                                
+
+                                &:hover {
+                                    background: rgb(185, 170, 170);
+                                    transition: 1s;
+
+                                }
+
+
+
+                                .svg-container {
+                                    @include svg-container();
+                                }
+                            }
+
+                            .music-card-control-play {
+                                @include gradient-style();
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                transition: 1s;
+
+                                &:hover {
+                                    background: rgb(185, 170, 170);
+                                    transition: 1s;
+
+                                }
+                                
+                            }
+                        }
                     }
                 }
             }

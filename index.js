@@ -5,6 +5,8 @@ window.addEventListener("load", () => {
     let weatherCardStateText = document.querySelector(".weather-card-state-text");
     let weatherCardDegreeText = document.querySelector(".weather-card-degree-text");
     let weatherCardMainText = document.querySelector(".weather-card-main-text");
+    let sliderInput = document.querySelector(".music-player-card-slider");
+    let progressBar = document.querySelector(".music-card-progress-bar");
 
 
     // weather icon condition
@@ -36,6 +38,7 @@ window.addEventListener("load", () => {
               .then((response) => response.json())
               .then((data) => {
                 console.log(data);
+
                 const { name, clouds, weather } = data;
 
                 weatherIcon(weather[0].main);
@@ -54,6 +57,11 @@ window.addEventListener("load", () => {
         );
         
     }
+
+    sliderInput.addEventListener("input", (e) => {
+      progressBar.style.width = e.target.value + "%";
+      console.log(e.target.value);
+    })
 
     getUserLocation();
 });

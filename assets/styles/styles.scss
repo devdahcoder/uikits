@@ -706,6 +706,128 @@ body {
 
             }
         }
+
+        .payment-card-container {
+            width: 300px;
+
+            .payment-card-display {
+                @include component-container();
+                display: flex;
+                flex-direction: column;
+                padding: 1em 2em;
+                // align-items: flex-start;
+                // justify-content: flex-start;
+
+                .payment-card-header {
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+
+                    .payment-card-header-icon {
+                        @include button-container();
+
+
+                        button {
+                            @include svg-btn();
+
+                            .svg-container {
+                                @include svg-container();
+                            }
+                        }
+                    }
+
+                    .payment-card-header-text {
+                        font-size: 16px;
+                    }
+                }
+
+                .payment-card-nav {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .payment-card-ul {
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+
+                        li {
+                            display: block;
+                            padding: 1em 0;
+                            .payment-card-list-display {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                .payment-card-method-checkbox {
+                                    position: relative;
+
+                                    input[type="checkbox"] {
+                                        visibility: hidden;
+
+                                        &:checked+label {
+                                            background: linear-gradient(270deg, #8743FF, #4136F1);
+                                            box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
+                                            
+                                        }
+                                    }
+
+                                    label {
+                                        background-color: $main-color;
+                                        border: 1px solid $main-color;
+                                        border-radius: 50%;
+                                        cursor: pointer;
+                                        height: 25px;
+                                        left: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        width: 25px;
+
+                                        &::after {
+                                            border: 2px solid #fff;
+                                            border-top: none;
+                                            border-right: none;
+                                            content: "";
+                                            height: 5px;
+                                            left: 5px;
+                                            opacity: 0;
+                                            position: absolute;
+                                            top: 6.5px;
+                                            transform: rotate(-45deg);
+                                            width: 10px;
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+
+                                .payment-card-method-image-container {
+                                    margin-left: 2em;
+                                    img {
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .payment-card-btn-container {
+                    width: 100%;
+                    margin-top: 1em;
+
+                    button {
+                        width: 100%;
+                        @include gradient-style();
+                        padding: 0.8em 0;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
 

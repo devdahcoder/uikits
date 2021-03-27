@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="67px" height="41px" viewbox="0 0 67 41" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0.022401148" stop-color="#A2ADB0" />
+      <stop offset="1" stop-color="#7C8590" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feOffset dx="0" dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.29803923 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+      <feGaussianBlur stdDeviation="1.1000689" result="effect1_gaussianBlur" />
+    </filter>
+  </defs>
+  <g id="icon_02" transform="translate(3.150116 3.150116)">
+    <path d="M0.996495 28.315C2.87128 34 10.1413 34 10.1413 34C10.1413 34 50.1871 34 50.1871 34C50.1871 34 60 33.6612 60 25.8696C60 18.0779 54.5732 14.6902 48.1289 14.6902C44.0625 7.14734 36.9361 -2.92577 18.6207 0.800687C11.1589 2.8333 7.87071 4.59617 4.12114 14.6902C-0.253363 17 -0.878292 23.9458 0.996495 28.315Z" id="Path-1639-Copy" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+  </g>
+</svg>

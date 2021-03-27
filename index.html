@@ -262,15 +262,19 @@
         <div class="weather-card-container">
             <div class="weather-card-display">
                 <div class="weather-card-image-container">
-                    <img src="./assets/images/sun.svg" alt="">
+                    <img class="weather-card-icon" src="" alt="">
                 </div>
 
                 <div class="weather-card-degree-container">
-                    <p>27 <sup>o</sup></p>
+                    <p class="weather-card-degree-text">27 </p><sup>o</sup>
+                </div>
+
+                <div class="weather-card-state-container">
+                    <p class="weather-card-state-text"></p>
                 </div>
 
                 <div class="weather-card-text-container">
-                    <p>Sunny</p>
+                    <p class="weather-card-main-text"></p>
                 </div>
             </div>
         </div>
@@ -364,6 +368,23 @@
             </div>
         </div>
 
+        <div class="notification-card-container">
+            <div class="notification-card-display">
+                <div class="notification-card-header">
+                    <div class="notication-card-header-image-container">
+                        <img src="./assets/images/notification.svg" alt="">
+                    </div>
+
+                    <div class="notication-card-header-text-container">
+                        <p>Notification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script type="module" src="index.js"></script>
+    
 </body>
 </html>

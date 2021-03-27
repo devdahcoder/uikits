@@ -840,6 +840,10 @@ body .container .payment-card-container .payment-card-display .payment-card-nav 
   align-items: center;
 }
 
+body .container .payment-card-container .payment-card-display .payment-card-nav .payment-card-ul li .payment-card-list-display .payment-card-method-checkbox {
+  margin-right: 1em;
+}
+
 body .container .payment-card-container .payment-card-display .payment-card-nav .payment-card-ul li .payment-card-list-display .payment-card-method-checkbox .payment-label {
   display: block;
   position: relative;
@@ -891,10 +895,6 @@ body .container .payment-card-container .payment-card-display .payment-card-nav 
   content: "";
   position: absolute;
   display: none;
-}
-
-body .container .payment-card-container .payment-card-display .payment-card-nav .payment-card-ul li .payment-card-list-display .payment-card-method-image-container {
-  margin-left: 2em;
 }
 
 body .container .payment-card-container .payment-card-display .payment-card-nav .payment-card-ul li .payment-card-list-display .payment-card-method-image-container img {

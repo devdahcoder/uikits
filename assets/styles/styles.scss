@@ -1,6 +1,5 @@
-//@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Noto+Sans+SC&family=Nunito&family=Open+Sans&family=Poppins&family=Roboto+Mono&family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Amiko&family=Chivo&family=Gabriela&family=Hind+Siliguri&family=Maitree&family=Merriweather+Sans&family=Noticia+Text&family=Noto+Sans&family=Nunito+Sans&family=Quicksand&family=Roboto&family=Sarala&family=Signika&family=Work+Sans&family=Yantramanav&display=swap');
 
 @mixin button-container {
     display: flex;
@@ -64,7 +63,24 @@ $main-color: #ffffff;
     vertical-align: baseline;
     scroll-behavior: smooth;
     // font-family: 'Fira Code', monospace; 
+    // font-family: 'Amiko', sans-serif;
+    // font-family: 'Chivo', sans-serif;
+    // font-family: 'Gabriela', serif;
+    // font-family: 'Hind Siliguri', sans-serif;
+    // font-family: 'Maitree', serif;
+    // font-family: 'Merriweather Sans', sans-serif;
+    // font-family: 'Noticia Text', serif;
+    // font-family: 'Noto Sans', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Sarala', sans-serif;
+    // font-family: 'Signika', sans-serif;
+    // font-family: 'Work Sans', sans-serif;
+    // font-family: 'Yantramanav', sans-serif;
+    // font-family: 'Yantramanav', sans-serif;
     font-family: 'Inter', sans-serif;
+    // font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
@@ -658,5 +674,44 @@ body {
                 }
             }
         }
+
+        .weather-card-container {
+            width: 180px;
+            .weather-card-display {
+                @include component-container();
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                padding: 1em;
+
+
+                .weather-card-degree-container {
+                    font-size: 60px;
+                    position: relative;
+                    margin: 0.3em 0;
+
+                    sup {
+                        position: absolute;
+                        top: 0;
+                        right: -17px;
+                        font-size: 20px;
+                    }
+                }
+
+                .weather-card-text-container {
+                    font-size: 18px;
+                    
+                }
+
+            }
+        }
     }
 }
+
+
+
+
+
+
+

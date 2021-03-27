@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .card-padding {
   padding: 3px 0;
 }
@@ -728,5 +728,37 @@ body .container .form-card-container .form-card-display form .form-card-btn-cont
   border-radius: 10px;
   padding: 1em 0;
   cursor: pointer;
+}
+
+body .container .weather-card-container {
+  width: 180px;
+}
+
+body .container .weather-card-container .weather-card-display {
+  border-radius: 24px;
+  background: #0d0d0d;
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+body .container .weather-card-container .weather-card-display .weather-card-degree-container {
+  font-size: 60px;
+  position: relative;
+  margin: 0.3em 0;
+}
+
+body .container .weather-card-container .weather-card-display .weather-card-degree-container sup {
+  position: absolute;
+  top: 0;
+  right: -17px;
+  font-size: 20px;
+}
+
+body .container .weather-card-container .weather-card-display .weather-card-text-container {
+  font-size: 18px;
 }
 /*# sourceMappingURL=styles.css.map */

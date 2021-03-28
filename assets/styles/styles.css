@@ -923,7 +923,7 @@ body .container .payment-card-container .payment-card-display .payment-card-btn-
 }
 
 body .container .music-player-card-container {
-  width: 320px;
+  width: 310px;
 }
 
 body .container .music-player-card-container .music-player-card-display {
@@ -997,28 +997,42 @@ body .container .music-player-card-container .music-player-card-display .music-p
   outline: none;
   height: 5px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 body .container .music-player-card-container .music-player-card-display .music-player-card-duration-container .music-player-card-duration-range input[type="range"]::-webkit-slider-thumb {
+  position: relative;
   appearance: none;
-  height: 14px;
-  width: 14px;
+  height: 15px;
+  width: 15px;
   border-radius: 100vh;
   background: linear-gradient(270deg, #8743FF, #4136F1);
   box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
   cursor: pointer;
   border-radius: 50%;
+  z-index: 3;
 }
 
 body .container .music-player-card-container .music-player-card-display .music-player-card-duration-container .music-player-card-duration-range .music-card-progress-bar {
-  width: 0%;
+  width: 100%;
   height: 5px;
-  background: linear-gradient(270deg, #8743FF, #4136F1);
+  background: #ffffff;
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
   border-radius: 10px;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 35%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+body .container .music-player-card-container .music-player-card-display .music-player-card-duration-container .music-player-card-duration-range .music-card-progress-bar .music-card-progress-fill {
+  display: block;
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  height: 100%;
+  width: 0%;
 }
 
 body .container .music-player-card-container .music-player-card-display .music-player-card-duration-container .music-player-card-duration-number-container {
@@ -1029,7 +1043,7 @@ body .container .music-player-card-container .music-player-card-display .music-p
 }
 
 body .container .music-player-card-container .music-player-card-display .music-card-player-control-container {
-  padding: 0em 2em;
+  padding: 0em 1em;
 }
 
 body .container .music-player-card-container .music-player-card-display .music-card-player-control-container .music-card-player-control-display {

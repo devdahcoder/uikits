@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="shortcut icon" href="./assets/images/cloudy.svg" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
@@ -387,35 +388,36 @@
             <div class="music-player-card-display">
                 <div class="music-player-card-image-container">
                     <div class="music-player-card-image-display">
-                        <img src="https://media.pitchfork.com/photos/5e9de95a2071a50008c2bd34/1:1/w_600/Blame%20It%20On%20Baby_DaBaby.jpg" alt="">
+                        <img class="music-player-card-image" src="https://media.pitchfork.com/photos/5e9de95a2071a50008c2bd34/1:1/w_600/Blame%20It%20On%20Baby_DaBaby.jpg" alt="">
                     </div>
                 </div>
-                
+
                 <div class="music-player-card-text-container">
                     <div class="music-player-card-artist">
-                        <p>Find my way</p>
+                        <p class="music-player-card-artist-name">Find my way</p>
                     </div>
                     <div class="music-player-card-song">
-                        <p>DaBaby</p>
+                        <p class="music-player-card-song-name">DaBaby</p>
                     </div>
                 </div>
     
                 <div class="music-player-card-duration-container">
                     
                     <div class="music-player-card-duration-range">
+                        <span class="music-card-progress-bar">
+                            <span class="music-card-progress-fill"></span>
+                        </span>
                         <input class="music-player-card-slider" type="range" name="" id="" min="0" max="100" value="0">
-                        <div class="music-card-progress-bar">
-
-                        </div>
+                        
                     </div>
 
                     <div class="music-player-card-duration-number-container">
                         <div>
-                            <p>12:20</p>
+                            <p class="music-player-card-duration-start">12:20</p>
                         </div>
         
                         <div>
-                            <p>13:50</p>
+                            <p class="music-player-card-duration-end">13:50</p>
                         </div>
                     </div>
 
@@ -424,7 +426,7 @@
                 <div class="music-card-player-control-container">
                     <div class="music-card-player-control-display">
                         <div class="music-card-player-control-btn-container">
-                            <button>
+                            <button class="music-card-player-control-prev-btn">
                                 <div class="svg-container">
                                     <img src="./assets/images/left-skip.svg" alt="">
                                 </div>
@@ -432,7 +434,7 @@
                         </div>
     
                         <div class="music-card-player-control-btn-container">
-                            <button>
+                            <button class="music-card-player-control-forward-btn">
                                 <div class="svg-container">
                                     <img src="./assets/images/left-forward.svg" alt="">
                                 </div>
@@ -442,19 +444,19 @@
                         <div class="music-card-player-control-btn-container">
                             <button class="music-card-control-play">
                                 <div class="svg-container">
-                                    <img src="./assets/images/play.svg" alt="">
+                                    <img class="music-card-control-play-icon" src="./assets/images/play.svg" alt="">
                                 </div>
                             </button>
                         </div>
                         <div class="music-card-player-control-btn-container">
-                            <button>
+                            <button class="music-card-player-control-reverse-btn">
                                 <div class="svg-container">
                                     <img src="./assets/images/right-forward.svg" alt="">
                                 </div>
                             </button>
                         </div>
                         <div class="music-card-player-control-btn-container">
-                            <button>
+                            <button class="music-card-player-control-next-btn">
                                 <div class="svg-container">
                                     <img src="./assets/images/right-skip.svg" alt="">
                                 </div>

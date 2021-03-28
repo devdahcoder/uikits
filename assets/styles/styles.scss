@@ -735,6 +735,9 @@ body {
 
                         button {
                             @include svg-btn();
+                            // cursor: pointer;
+                            // font-size: 16px;
+                            // font-weight: 500;
 
                             .svg-container {
                                 @include svg-container();
@@ -896,7 +899,7 @@ body {
         }
 
         .music-player-card-container {
-            width: 320px;
+            width: 310px;
             .music-player-card-display {
                 @include component-container();
                 display: flex;
@@ -941,28 +944,23 @@ body {
                     .music-player-card-artist {
                         font-size: 23px;
                         line-height: 25px;
-                        // padding: 0.5em 0;
                     }
 
                     .music-player-card-song {
                         font-size: 15px;
                         line-height: 25px;
-                        // padding: 0.3em 0;
                     }
                 }
 
                 .music-player-card-duration-container {
                     width: 100%;
                     display: flex;
-                    // align-items: center;
                     flex-direction: column;
-                    // justify-content: space-between;
 
                     .music-player-card-duration-range {
                         margin-bottom: 3px;
                         width: 100%;
                         position: relative;
-                        // border: 1px solid red;
 
                         input[type="range"] {
                             vertical-align: middle;
@@ -970,32 +968,49 @@ body {
                             outline: none;
                             height: 5px;
                             width: 100%;
-                            border-radius: 10px;
+                            border-radius: 50%;
+                            z-index: 2;
                             
 
                             &::-webkit-slider-thumb {
+                                position: relative;
                                 appearance: none;
-                                height: 14px;
-                                width: 14px;
+                                height: 15px;
+                                width: 15px;
                                 border-radius: 100vh;
                                 background: linear-gradient(270deg, #8743FF, #4136F1);
                                 box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
                                 cursor: pointer;
                                 border-radius: 50%;
+                                z-index: 3;
+
+
+                                
                             }
 
                         }
 
                         .music-card-progress-bar {
-                            width: 0%;
+                            width: 100%;
                             height: 5px;
-                            background: linear-gradient(270deg, #8743FF, #4136F1);
-                            // box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
+                            background: $main-color;
+                            box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
                             border-radius: 10px;
                             position: absolute;
                             left: 0;
-                            top: 50%;
-                            // transform: translate(50%,50%);
+                            top: 35%;
+                            z-index: 1;
+                            overflow: hidden;
+
+                            .music-card-progress-fill {
+                                display: block;
+                                background: linear-gradient(270deg, #8743FF, #4136F1);
+                                box-shadow: 0px 15px 30px rgba(20,102,204,0.16);
+                                height: 100%;
+                                width: 0%;
+
+                            }
+                            
                         }
                     }
 
@@ -1008,7 +1023,7 @@ body {
                 }
 
                 .music-card-player-control-container {
-                    padding: 0em 2em;
+                    padding: 0em 1em;
 
                     .music-card-player-control-display {
                         display: flex;
